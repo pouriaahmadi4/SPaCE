@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Ubuntu:wght@500&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    z-index: 100;
+    position: sticky;
+    top: 0px;
+    display: block;
+    padding: 2px;
+    height: 100px;
+    background-color: #445069;
+}
+
+nav {
+    padding-top: 4px;
+    margin: 0 14px;
+    background-color: inherit;
+    height: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.container {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #445069;
+    width:100%;
+    list-style: none;
+    align-items: center;
+}
+
+.links {
+    display: inline-block;
+    text-decoration:none ;
+    font-family: 'Ubuntu', sans-serif;
+    background: linear-gradient(to right, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 62%, rgba(134,174,204,1) 100%);
+    color: #28206d;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.links:nth-of-type(1) { flex-grow: 2}
+.links:nth-of-type(3) { flex-grow: 3}
+.links:nth-of-type(2) { flex-grow: 2}
+.links:nth-of-type(4) { flex-grow: 3}
+  
+ a:hover {
+    margin: 0 5px 3px -3px;
+    font-size: 28px;
+}
+
+.why {
+    position: relative;
+    background-color: #9abdbd;
+    min-height: 115vh;
+    font-family: 'Libre Baskerville', serif;
+    padding: 1rem;
+
+}
+
+.upper {
+    margin-top: 15px;
+    padding-left: 30px;
+    list-style-type: upper-roman;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+.upper li {
+    margin-bottom: 7px;
+    line-height: 25px;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.stars {
+    display: inline-block;
+    position: relative;
+}
+
+.fa-shuttle-space {
+    color: #b9dcdf;
+    position: fixed;
+    top:77px;
+    left: 240px;
+    display: block;
+    z-index:20;
+ }
+
+ .fa-star:nth-of-type(2) {
+    color: #ecd909;
+    position: absolute;
+    top:-47px;
+    left: 140px;
+    display: block;
+}
+
+.fa-star:nth-of-type(3) {
+    color: #ecd909;
+    position: fixed;
+    top:77px;
+    right: 180px;
+    display: block;
+}
+
+.fa-star:nth-of-type(4) {
+    color: #ecd909;
+    position: absolute;
+    top:-47px;
+    left: 660px;
+    display: block;
+}
+
+.fa-star:nth-of-type(5) {
+    color: #ecd909;
+    position: fixed;
+    top:77px;
+    right: 660px;
+    display: block;
+}
+
+.fa-star:nth-of-type(6) {
+    color: #ecd909;
+    position: fixed;
+    top:60px;
+    right: 700px;
+    display: block;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #da7810;
+  }
+
+.card {
+    width: 240px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(91, 167, 150);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    justify-items: center;
+    border-radius: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .card a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #fca400;
+    text-align: center;
+    text-transform: capitalize;
+  }
